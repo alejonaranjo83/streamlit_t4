@@ -18,11 +18,7 @@ import streamlit_scrollable_textbox as stx
 import os
 from pathlib import Path
 #print(Path.cwd())
-
-# path=("/Volumes/GoogleDrive/My Drive/Taller4_Seguimiento/seguimiento_t4/data/processed")
-
-path = "data/processed"
-
+path=("/Volumes/GoogleDrive/My Drive/Taller4_Seguimiento/seguimiento_t4/data/processed")
 os.listdir(path)
 os.chdir(path)
 
