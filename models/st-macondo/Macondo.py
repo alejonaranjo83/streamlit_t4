@@ -1,21 +1,5 @@
 import streamlit as st
 
-
-st.set_page_config(
-    page_title="Habitar Macondo", layout='wide',
-    # page_icon="👋",  
-    initial_sidebar_state='expanded'
-)
-
-
-
-
-st.title("Habitar Macondo")
-
-# st.markdown("""Aplicación para visualizar el desempeño de los estudiantes, en su misión de diseñar finales alternativos para Macondo""")
-
-
-
 #LEER DATOS
 import os
 from pathlib import Path
@@ -32,6 +16,25 @@ path = "data/processed"
 
 os.listdir(path)
 os.chdir(path)
+
+
+
+
+st.set_page_config(
+    page_title="Habitar Macondo", layout='wide',
+    # page_icon="👋",  
+    initial_sidebar_state='expanded'
+)
+
+
+
+
+st.title("Habitar Macondo")
+
+# st.markdown("""Aplicación para visualizar el desempeño de los estudiantes, en su misión de diseñar finales alternativos para Macondo""")
+
+
+
 
 
 
