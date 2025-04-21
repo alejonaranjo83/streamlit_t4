@@ -1,5 +1,24 @@
 import streamlit as st
 
+#LEER DATOS
+import os
+from pathlib import Path
+#print(Path.cwd())
+
+# path=("/Volumes/GoogleDrive/My Drive/Taller4_Seguimiento/seguimiento_t4/data/processed")
+
+# Go back to the parent directory
+# path = Path.cwd().parent
+
+
+# path = "models/st-macondo"
+path = "data/processed"
+
+os.listdir(path)
+os.chdir(path)
+
+
+
 
 st.set_page_config(
     page_title="Habitar Macondo", layout='wide',
@@ -16,13 +35,6 @@ st.title("Habitar Macondo")
 
 
 
-#LEER DATOS
-import os
-from pathlib import Path
-#print(Path.cwd())
-path=("/Volumes/GoogleDrive/My Drive/Taller4_Seguimiento/seguimiento_t4/data/processed")
-os.listdir(path)
-os.chdir(path)
 
 
 
