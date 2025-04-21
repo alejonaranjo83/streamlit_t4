@@ -1,8 +1,8 @@
 import streamlit as st
 
 #LEER DATOS
-# import os
-# from pathlib import Path
+import os
+from pathlib import Path
 #print(Path.cwd())
 
 # path=("/Volumes/GoogleDrive/My Drive/Taller4_Seguimiento/seguimiento_t4/data/processed")
@@ -11,11 +11,11 @@ import streamlit as st
 # path = Path.cwd().parent
 
 
-# models/st-macondo/Macondo.py
+path = "models/st-macondo"
 # path = "data/processed"
 
-# os.listdir(path)
-# os.chdir(path)
+os.listdir(path)
+os.chdir(path)
 
 
 
@@ -52,18 +52,18 @@ with st.sidebar.container(height=470, border=0):
 # st.image('ImagenCentral.png', width=100, use_column_width=True)
 
 
-# st.image('ImagenCentral.png', width=850, use_container_width='always')
+st.image('ImagenCentral.png', width=850, use_container_width='always')
 
 
-# col = st.columns((0.33, 0.33, 0.33), gap='small')
+col = st.columns((0.33, 0.33, 0.33), gap='small')
 
-# with col[0]:
-#     st.image('Miniatura1_roles.png', use_container_width='always')
+with col[0]:
+    st.image('Miniatura1_roles.png', use_container_width='always')
 
-# with col[1]:
-#     st.image('Miniatura2_equipos.png', use_container_width='always')
+with col[1]:
+    st.image('Miniatura2_equipos.png', use_container_width='always')
 
-# with col[2]:
-#     st.image('Miniatura3_entornos.png', use_container_width='always')
+with col[2]:
+    st.image('Miniatura3_entornos.png', use_container_width='always')
 
-# st.image('Formulac_desafioB.png', use_container_width='always')
+st.image('Formulac_desafioB.png', use_container_width='always')
