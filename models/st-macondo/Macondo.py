@@ -11,8 +11,8 @@ from pathlib import Path
 # path = Path.cwd().parent
 
 
-path = "models/st-macondo"
-# path = "data/processed"
+# path = "models/st-macondo"
+path = "data/processed"
 
 os.listdir(path)
 os.chdir(path)
