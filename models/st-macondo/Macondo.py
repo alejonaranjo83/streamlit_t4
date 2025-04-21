@@ -5,14 +5,14 @@ import os
 from pathlib import Path
 #print(Path.cwd())
 
-# path=("/Volumes/GoogleDrive/My Drive/Taller4_Seguimiento/seguimiento_t4/data/processed")
+path=("/Volumes/GoogleDrive/My Drive/Taller4_Seguimiento/seguimiento_t4/data/processed")
 
 # Go back to the parent directory
 # path = Path.cwd().parent
 
 
 # models/st-macondo/Macondo.py
-path = "data/processed"
+# path = "data/processed"
 
 os.listdir(path)
 os.chdir(path)
