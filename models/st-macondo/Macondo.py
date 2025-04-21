@@ -26,10 +26,6 @@ from pathlib import Path
 # Go back to the parent directory
 # path = Path.cwd().parent
 
-# # Concatenate the parent directory with the subdirectory 'data/processed'.
-# path = path / "data/processed"
-# # Convert the path to a string
-# path = str(path)
 
 # models/st-macondo/Macondo.py
 path = "data/processed"
