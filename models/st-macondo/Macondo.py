@@ -24,12 +24,15 @@ from pathlib import Path
 # path=("/Volumes/GoogleDrive/My Drive/Taller4_Seguimiento/seguimiento_t4/data/processed")
 
 # Go back to the parent directory
-path = Path.cwd().parent
+# path = Path.cwd().parent
 
-# Concatenate the parent directory with the subdirectory 'data/processed'.
-path = path / "data/processed"
-# Convert the path to a string
-path = str(path)
+# # Concatenate the parent directory with the subdirectory 'data/processed'.
+# path = path / "data/processed"
+# # Convert the path to a string
+# path = str(path)
+
+# models/st-macondo/Macondo.py
+path = "data/processed"
 
 os.listdir(path)
 os.chdir(path)
