@@ -6,13 +6,14 @@ import pathlib
 from pathlib import Path
 
 
+st.write("Hasta aquí funciona")
 
 # go to the 'data_prueba' directory 
-path = os.path.join(pathlib.Path(__file__).parent.resolve(), 'data_prueba')
+# path = os.path.join(pathlib.Path(__file__).parent.resolve(), 'data_prueba')
 # path = os.path.join(pathlib.Path(__file__).parent.resolve(), 'data', 'processed')
 
 
-st.write(path)
+# st.write(path)
 
 
 
