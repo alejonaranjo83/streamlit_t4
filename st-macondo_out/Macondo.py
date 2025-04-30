@@ -1,7 +1,7 @@
 import streamlit as st
 
 #LEER DATOS
-import os
+# import os
 # import pathlib
 # from pathlib import Path
 
@@ -15,18 +15,16 @@ import pandas as pd
 
 
 
-
-
 # Method 3: Using os.path.join (more robust for different OS)
-data_dir = "data_prueba"  # Directory name
-file_name = "df_total_e3.xlsx"  # File name
-file_path = os.path.join(data_dir, file_name)
-try:
-    df_os = pd.read_excel(file_path)
-    st.write("DataFrame from os.path.join:")
-    st.dataframe(df_os)
-except FileNotFoundError:
-    st.error("File not found. Please check the path using os.path.join.")
+# data_dir = "data_prueba"  # Directory name
+# file_name = "df_total_e3.xlsx"  # File name
+# file_path = os.path.join(data_dir, file_name)
+# try:
+#     df_os = pd.read_excel(file_path)
+#     st.write("DataFrame from os.path.join:")
+#     st.dataframe(df_os)
+# except FileNotFoundError:
+#     st.error("File not found. Please check the path using os.path.join.")
 
 
 
@@ -34,11 +32,13 @@ except FileNotFoundError:
 
 
 
+
+# df = pd.read_csv("./data/titanic.csv") 
 
 
 # df = pd.read_excel("./data_prueba/df_total_e3.xlsx")
 
-# df = pd.read_excel("data_prueba/df_total_e3.xlsx")
+df = pd.read_excel("data_prueba/df_total_e3.xlsx")
 
 
 
@@ -47,7 +47,7 @@ except FileNotFoundError:
 
 
 
-# st.write(df)
+st.write(df)
 
 
 # go to the 'data_prueba' directory 
