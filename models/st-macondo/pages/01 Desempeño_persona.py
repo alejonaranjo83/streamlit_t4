@@ -15,16 +15,17 @@ import streamlit_scrollable_textbox as stx
 
 
 #LEER DATOS
-import os
-from pathlib import Path
+# import os
+# import pathlib
+# from pathlib import Path
 #print(Path.cwd())
 
-# path=("/Volumes/GoogleDrive/My Drive/Taller4_Seguimiento/seguimiento_t4/data/processed")
 
-path = "data/processed"
+# path = Path(__file__).resolve().parent.parent.parent / "data/processed"
 
-os.listdir(path)
-os.chdir(path)
+
+# os.listdir(path)
+# os.chdir(path)
 
 
 # read the data from the corresponding file 

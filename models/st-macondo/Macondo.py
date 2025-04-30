@@ -2,17 +2,17 @@ import streamlit as st
 
 #LEER DATOS
 import os
+import pathlib
 from pathlib import Path
-#print(Path.cwd())
-
-# path=("/Volumes/GoogleDrive/My Drive/Taller4_Seguimiento/seguimiento_t4/data/processed")
-
-# Go back to the parent directory
-# path = Path.cwd().parent
 
 
-# path = "models/st-macondo"
-path = "data/processed"
+path = Path(__file__).resolve().parent.parent.parent / "data/processed"
+
+
+# Get the current working directory
+# path = os.getcwd()
+# path = os.path.dirname(path)
+
 
 os.listdir(path)
 os.chdir(path)
@@ -28,12 +28,11 @@ st.set_page_config(
 
 
 
+st.write(path)
 
 st.title("Habitar Macondo")
 
 # st.markdown("""Aplicación para visualizar el desempeño de los estudiantes, en su misión de diseñar finales alternativos para Macondo""")
-
-
 
 
 
@@ -49,10 +48,27 @@ with st.sidebar.container(height=470, border=0):
 #CONTENIDO PRINCIPAL
 
 
+
+
+# import data.processed as path
+
+# img1 = path.data_processed("ImagenCentral.png")
+
+# path = os.path.join(path, "data", "processed")
+
+# st.write(path)
+
+
+# st.image('img1', width=850, use_container_width='always')
+
+
+
 # st.image('ImagenCentral.png', width=100, use_column_width=True)
 
-
 st.image('ImagenCentral.png', width=850, use_container_width='always')
+
+
+
 
 
 col = st.columns((0.33, 0.33, 0.33), gap='small')
