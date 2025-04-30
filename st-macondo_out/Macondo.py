@@ -1,7 +1,7 @@
 import streamlit as st
 
 #LEER DATOS
-import os
+# import os
 # import pathlib
 # from pathlib import Path
 
@@ -9,9 +9,9 @@ import os
 
 import pandas as pd
 
-# df = pd.read_excel("./data_prueba/df_total_e3.xlsx")
+df = pd.read_excel("./data_prueba/df_total_e3.xlsx")
 
-df = pd.read_excel("data_prueba/df_total_e3.xlsx")
+# df = pd.read_excel("data_prueba/df_total_e3.xlsx")
 
 
 
