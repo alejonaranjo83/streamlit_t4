@@ -2,8 +2,8 @@ import streamlit as st
 
 #LEER DATOS
 import os
-import pathlib
-from pathlib import Path
+# import pathlib
+# from pathlib import Path
 
 
 
