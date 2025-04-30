@@ -1,9 +1,9 @@
 import streamlit as st
 
 #LEER DATOS
-import os
-import pathlib
-from pathlib import Path
+# import os
+# import pathlib
+# from pathlib import Path
 
 
 st.write("Hasta aquí funciona")
