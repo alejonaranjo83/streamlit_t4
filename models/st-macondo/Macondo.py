@@ -1,12 +1,20 @@
 import streamlit as st
 
 #LEER DATOS
-# import os
-# import pathlib
-# from pathlib import Path
+import os
+import pathlib
+from pathlib import Path
 
 
-st.write("Hasta aquí funciona")
+
+import pandas as pd
+
+df = pd.read_excel("./data_prueba/df_total_e3.xlsx")
+
+
+
+st.write(df)
+
 
 # go to the 'data_prueba' directory 
 # path = os.path.join(pathlib.Path(__file__).parent.resolve(), 'data_prueba')
@@ -14,6 +22,13 @@ st.write("Hasta aquí funciona")
 
 
 # st.write(path)
+
+
+
+
+
+
+
 
 
 
