@@ -7,13 +7,12 @@ from pathlib import Path
 
 
 
-
-path_prueba = pathlib.Path().resolve()
-
-st.write(path_prueba)
-
+# go to the 'data_prueba' directory 
+path = os.path.join(pathlib.Path(__file__).parent.resolve(), 'data_prueba')
+# path = os.path.join(pathlib.Path(__file__).parent.resolve(), 'data', 'processed')
 
 
+st.write(path)
 
 
 
