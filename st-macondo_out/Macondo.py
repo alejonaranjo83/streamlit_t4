@@ -9,7 +9,9 @@ import os
 
 import pandas as pd
 
-df = pd.read_excel("./data_prueba/df_total_e3.xlsx")
+# df = pd.read_excel("./data_prueba/df_total_e3.xlsx")
+
+df = pd.read_excel("data_prueba/df_total_e3.xlsx")
 
 
 
