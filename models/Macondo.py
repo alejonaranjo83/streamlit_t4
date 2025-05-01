@@ -14,31 +14,24 @@ base_dir = os.path.dirname(__file__)
 
 sub_dir = "data/processed" # subdirectory name
 
-file_name = "df_total_e3.xlsx" # file name
+# file_name = "df_total_e3.xlsx" # file name
 
-file_path = os.path.join(base_dir, sub_dir, file_name) # join the base directory with the subdirectory and file name
-
-
-df = pd.read_excel(file_path)
+# file_path = os.path.join(base_dir, sub_dir, file_name) # join the base directory with the subdirectory and file name
 
 
+# df = pd.read_excel(file_path)
 
+# st.write(df)
+
+
+
+
+path = os.path.join(base_dir, sub_dir)
+
+os.listdir(path)
+os.chdir(path)
 
 st.write(df)
-
-
-st.header("Habitar Macondo")
-st.subheader("¿Cómo se comportan los estudiantes en su misión de diseñar finales alternativos para Macondo?")
-
-# # Get the current working directory
-# # path = os.getcwd()
-# # path = os.path.dirname(path)
-
-# os.listdir(path)
-# os.chdir(path)
-
-
-
 
 # st.set_page_config(
 #     page_title="Habitar Macondo", layout='wide',
