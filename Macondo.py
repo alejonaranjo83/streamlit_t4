@@ -25,7 +25,13 @@ st.set_page_config(
     initial_sidebar_state='expanded'
 )
 
-df = pd.read_excel("df_total_e3.xlsx")
+
+
+# Use 'openpyxl' library to read the Excel file
+# df = pd.read_excel("data/processed/df_total_e3.xlsx")
+# Use 'openpyxl' library to read the Excel file
+# df = pd.read_excel("data/processed/df_total_e3.xlsx", engine='openpyxl')
+df = pd.read_excel("df_total_e3.xlsx", engine='openpyxl')
 
 st.write(df)
 # st.write(path)
