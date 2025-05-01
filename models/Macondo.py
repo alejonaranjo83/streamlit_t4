@@ -28,7 +28,7 @@ st.set_page_config(
 # df = pd.read_excel("df_total_e3.xlsx")
 
 # st.write(df)
-st.write(path)
+# st.write(path)
 
 
 st.title("Habitar Macondo")

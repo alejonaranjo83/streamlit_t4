@@ -1,18 +1,37 @@
-# Working on this file in order to reload changes faster and easier
-
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.patches as patches
 import streamlit as st
-
-import streamlit_scrollable_textbox as stx
-
-
-
-# Link útil para crear el tablero:    https://blog.streamlit.io/crafting-a-dashboard-app-in-python-using-streamlit/
+import pandas as pd
+import os
 
 
+
+base_dir = os.path.dirname(__file__)
+# base_dir = "." # what is doing this line of code? 
+
+sub_dir = "data/processed" # subdirectory name
+
+path = os.path.join(base_dir, sub_dir)
+
+os.listdir(path)
+os.chdir(path)
+
+
+
+
+
+
+
+
+
+# import pandas as pd
+# import numpy as np
+# import matplotlib.pyplot as plt
+# import matplotlib.patches as patches
+# import streamlit as st
+
+# import streamlit_scrollable_textbox as stx
+
+
+# [Errno 2] No such file or directory: '/mount/src/streamlit_t4/models/data/processed/models/Macondo.py'
 
 #LEER DATOS
 # import os
@@ -25,6 +44,14 @@ import streamlit_scrollable_textbox as stx
 
 # os.listdir(path)
 # os.chdir(path)
+
+
+
+
+
+
+
+
 
 
 # read the data from the corresponding file 
