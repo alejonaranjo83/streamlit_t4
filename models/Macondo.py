@@ -64,41 +64,39 @@ with st.sidebar.container(height=470, border=0):
 
 
 
+
 # #CONTENIDO PRINCIPAL
 
+import data.processed as path
+
+img1 = path.data_processed("ImagenCentral.png")
+
+path = os.path.join(path, "data", "processed")
+
+st.write(path)
+
+
+st.image('img1', width=850, use_container_width='always')
 
 
 
-# # import data.processed as path
+st.image('ImagenCentral.png', width=100, use_column_width=True)
 
-# # img1 = path.data_processed("ImagenCentral.png")
-
-# # path = os.path.join(path, "data", "processed")
-
-# # st.write(path)
-
-
-# # st.image('img1', width=850, use_container_width='always')
-
-
-
-# # st.image('ImagenCentral.png', width=100, use_column_width=True)
-
-# st.image('ImagenCentral.png', width=850, use_container_width='always')
+st.image('ImagenCentral.png', width=850, use_container_width='always')
 
 
 
 
 
-# col = st.columns((0.33, 0.33, 0.33), gap='small')
+col = st.columns((0.33, 0.33, 0.33), gap='small')
 
-# with col[0]:
-#     st.image('Miniatura1_roles.png', use_container_width='always')
+with col[0]:
+    st.image('Miniatura1_roles.png', use_container_width='always')
 
-# with col[1]:
-#     st.image('Miniatura2_equipos.png', use_container_width='always')
+with col[1]:
+    st.image('Miniatura2_equipos.png', use_container_width='always')
 
-# with col[2]:
-#     st.image('Miniatura3_entornos.png', use_container_width='always')
+with col[2]:
+    st.image('Miniatura3_entornos.png', use_container_width='always')
 
-# st.image('Formulac_desafioB.png', use_container_width='always')
+st.image('Formulac_desafioB.png', use_container_width='always')
