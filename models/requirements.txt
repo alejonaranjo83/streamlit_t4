@@ -1,8 +1,0 @@
-pandas
-plotly
-altair
-matplotlib
-streamlit
-numpy 
-openpyxl
-streamlit_scrollable_textbox
