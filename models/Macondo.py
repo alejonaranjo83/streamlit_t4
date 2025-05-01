@@ -19,37 +19,18 @@ file_name = "df_total_e3.xlsx" # file name
 file_path = os.path.join(base_dir, sub_dir, file_name) # join the base directory with the subdirectory and file name
 
 
-df = pd.read_excel(file_path)
+# df = pd.read_excel(file_path)
 
 
 
+# Change the working directory to the base_dir/sub_dir
+os.chdir(os.path.join(base_dir, sub_dir))
 
-
-
+df = pd.read_excel("df_total_e3.xlsx")
 
 st.write(df)
 
 
-# go to the 'data_prueba' directory 
-# path = os.path.join(pathlib.Path(__file__).parent.resolve(), 'data_prueba')
-# path = os.path.join(pathlib.Path(__file__).parent.resolve(), 'data', 'processed')
-
-
-# st.write(path)
-
-
-
-
-
-
-
-
-
-
-
-
-
-# path = Path(__file__).resolve().parent.parent.parent / "data/processed"
 
 
 # # Get the current working directory
