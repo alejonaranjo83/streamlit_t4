@@ -8,40 +8,6 @@ import os
 
 
 
-
-
-# import pandas as pd
-# import numpy as np
-# import matplotlib.pyplot as plt
-# import matplotlib.patches as patches
-# import streamlit as st
-
-# import streamlit_scrollable_textbox as stx
-
-
-# [Errno 2] No such file or directory: '/mount/src/streamlit_t4/models/data/processed/models/Macondo.py'
-
-#LEER DATOS
-# import os
-# import pathlib
-# from pathlib import Path
-
-
-# path = Path(__file__).resolve().parent.parent.parent / "data/processed"
-
-
-# os.listdir(path)
-# os.chdir(path)
-
-
-
-
-
-
-
-
-
-
 # read the data from the corresponding file 
 
 df = pd.read_excel('df_total_e3.xlsx')
@@ -489,12 +455,6 @@ def streamlit_entrega_com_rub(df, student_name, entrega):
 
     
 
-# Create a loop in which by default, the code is going to show the comments of the 'E1' selected by the user. Otherwise, the code will show the comments of the entrega selected by the user.
-
-# if entrega is None:
-#     entrega = 'E1'
-# else:
-#     entrega = entrega   
 
 
 
@@ -525,15 +485,6 @@ st.set_page_config(layout='wide')
 
 
 
-# st.title('Habitar Macondo')
-
-# Create a sidebar
-# st.sidebar.title('Habitar Macondo')
-# st.sidebar.subheader('Subtítulo sidebar')
-
-# st.sidebar.write('Opciones para filtrar los resultados')
-
-# st.sidebar.divider()
 
 # st.sidebar.write('Persona')
 persona = st.sidebar.selectbox( # En función de esta variable se modifica el resto de la página
@@ -598,14 +549,6 @@ with col[1]: # a
         streamlit_entrega_com_rub(df, persona, entrega)
         
  
-
-
-
-
-
-# Create a table
-    # st.write(df.iloc[:nrows, :ncols])
-
 
 
 

@@ -39,9 +39,6 @@ st.set_page_config(
 
 st.title("Habitar Macondo")
 
-# st.markdown("""Aplicación para visualizar el desempeño de los estudiantes, en su misión de diseñar finales alternativos para Macondo""")
-
-
 
 
 with st.sidebar.container(height=470, border=0):

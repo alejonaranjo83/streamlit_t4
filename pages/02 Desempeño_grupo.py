@@ -11,6 +11,15 @@ import os
 
 
 
+st.subheader('Desempeño del grupo (2025.01)')
+
+st.write('El texto que encabeza cada gráfico, corresponde al código del estudiante, eliminando el encabezado de "30000" pues es igual para todos.')
+
+st.write('La letra que lo acompaña, corresponde a la inicial del primer nombre que aparece en la lista.')
+
+
+
+
 # read the data from the corresponding file 
 
 df = pd.read_excel('df_total_e3.xlsx')
@@ -62,13 +71,6 @@ def assign_colors_to_ranges(values):
     ]
 
     color_dict = {}
-    # for value in values:
-    #     for (lower, upper), color in zip(ranges, colors):
-    #         if lower <= value <= upper:
-    #             color_dict[value] = color
-    #             break  # Stop checking ranges once a match is found
-    # return color_dict
-
 
     for value in values:
         if isinstance(value, (int, float)):
@@ -374,9 +376,6 @@ with st.container(height=700):
                     plot_student_performance(df, students[i*9+8])
 
 
-st.write('El texto que encabeza cada gráfico, corresponde al código de cada estudiante, eliminando el encabezado de "30000".')
-
-st.write('La letra que lo acompaña, corresponde a la inicial del primer nombre.')
 
 
 
