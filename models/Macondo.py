@@ -26,10 +26,14 @@ sub_dir = "data/processed" # subdirectory name
 
 
 
+
 path = os.path.join(base_dir, sub_dir)
 
 os.listdir(path)
 os.chdir(path)
+
+
+df = pd.read_excel("df_total_e3.xlsx")
 
 st.write(df)
 
