@@ -18,7 +18,6 @@ sub_dir = "data/processed" # subdirectory name
 
 # file_path = os.path.join(base_dir, sub_dir, file_name) # join the base directory with the subdirectory and file name
 
-
 # df = pd.read_excel(file_path)
 
 # st.write(df)
@@ -37,19 +36,19 @@ df = pd.read_excel("df_total_e3.xlsx")
 
 st.write(df)
 
-# st.set_page_config(
-#     page_title="Habitar Macondo", layout='wide',
-#     # page_icon="👋",  
-#     initial_sidebar_state='expanded'
-# )
+st.set_page_config(
+    page_title="Habitar Macondo", layout='wide',
+    # page_icon="👋",  
+    initial_sidebar_state='expanded'
+)
 
 
 
-# st.write(path)
+st.write(path)
 
-# st.title("Habitar Macondo")
+st.title("Habitar Macondo")
 
-# # st.markdown("""Aplicación para visualizar el desempeño de los estudiantes, en su misión de diseñar finales alternativos para Macondo""")
+# st.markdown("""Aplicación para visualizar el desempeño de los estudiantes, en su misión de diseñar finales alternativos para Macondo""")
 
 
 
