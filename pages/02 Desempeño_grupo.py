@@ -6,21 +6,9 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import streamlit as st
 
-# import streamlit_scrollable_textbox as stx
-
-
-
-
-
-#LEER DATOS
 import os
-from pathlib import Path
 
 
-# path = Path(__file__).resolve().parent.parent.parent / "data/processed"
-
-# os.listdir(path)
-# os.chdir(path)
 
 
 # read the data from the corresponding file 

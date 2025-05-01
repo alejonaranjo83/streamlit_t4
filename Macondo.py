@@ -10,15 +10,14 @@ import os
 
 #LEER DATOS (cambiando el directorio de trabajo... genera error luego para leer directorio de 'pages')
 
-base_dir = os.path.dirname(__file__)
-# base_dir = "." # what is doing this line of code? 
+# base_dir = os.path.dirname(__file__)
 
-sub_dir = "data" # subdirectory name
+# sub_dir = "data" # subdirectory name
 
-path = os.path.join(base_dir, sub_dir)
+# path = os.path.join(base_dir, sub_dir)
 
-os.listdir(path)
-os.chdir(path)
+# os.listdir(path)
+# os.chdir(path)
 
 
 
