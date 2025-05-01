@@ -27,7 +27,8 @@ df = pd.read_excel(file_path)
 st.write(df)
 
 
-
+st.header("Habitar Macondo")
+st.subheader("¿Cómo se comportan los estudiantes en su misión de diseñar finales alternativos para Macondo?")
 
 # # Get the current working directory
 # # path = os.getcwd()
