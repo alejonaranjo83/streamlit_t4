@@ -23,10 +23,6 @@ df = pd.read_excel(file_path)
 
 
 
-# Change the working directory to the base_dir/sub_dir
-# os.chdir(os.path.join(base_dir, sub_dir))
-
-# df = pd.read_excel("df_total_e3.xlsx")
 
 st.write(df)
 
