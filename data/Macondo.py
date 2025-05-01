@@ -34,7 +34,7 @@ st.set_page_config(
 # Use 'openpyxl' library to read the Excel file
 # df = pd.read_excel("df_total_e3.xlsx", engine='openpyxl')
 
-# st.write(df)
+st.write(df)
 # st.write(path)
 
 
