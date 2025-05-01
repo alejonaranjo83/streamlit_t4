@@ -12,8 +12,8 @@ import pandas as pd
 
 
 
-# base_dir = os.path.dirname(__file__)
-base_dir = "." # what is doing this line of code? 
+base_dir = os.path.dirname(__file__)
+# base_dir = "." # what is doing this line of code? 
  
 sub_dir = "data_prueba" # subdirectory name
 
