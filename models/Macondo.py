@@ -41,7 +41,7 @@ path = os.path.join(base_dir, sub_dir)
 os.listdir(path)
 os.chdir(path)
 
-st.write(path)
+
 
 
 # df = pd.read_excel("df_total_e3.xlsx")
@@ -118,7 +118,7 @@ st.set_page_config(
     initial_sidebar_state='expanded'
 )
 
-
+st.write(path)
 
 
 st.title("Habitar Macondo")
