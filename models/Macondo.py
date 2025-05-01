@@ -38,6 +38,8 @@ path = os.path.join(base_dir, sub_dir)
 os.listdir(path)
 os.chdir(path)
 
+st.write(path)
+
 
 df = pd.read_excel("df_total_e3.xlsx")
 
@@ -46,7 +48,6 @@ st.write(df)
 
 
 
-st.write(path)
 
 st.title("Habitar Macondo")
 
