@@ -1,5 +1,10 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
+import streamlit_scrollable_textbox as stx
+
 import os
 
 
@@ -28,9 +33,6 @@ st.set_page_config(
 
 
 # Use 'openpyxl' library to read the Excel file
-# df = pd.read_excel("data/processed/df_total_e3.xlsx")
-# Use 'openpyxl' library to read the Excel file
-# df = pd.read_excel("data/processed/df_total_e3.xlsx", engine='openpyxl')
 df = pd.read_excel("df_total_e3.xlsx", engine='openpyxl')
 
 st.write(df)
