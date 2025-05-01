@@ -6,6 +6,13 @@ import os
 # from pathlib import Path
 
 
+st.set_page_config(
+    page_title="Habitar Macondo", layout='wide',
+    # page_icon="👋",  
+    initial_sidebar_state='expanded'
+)
+
+
 
 #LEER DATOS
 
@@ -36,11 +43,6 @@ df = pd.read_excel("df_total_e3.xlsx")
 
 st.write(df)
 
-st.set_page_config(
-    page_title="Habitar Macondo", layout='wide',
-    # page_icon="👋",  
-    initial_sidebar_state='expanded'
-)
 
 
 
