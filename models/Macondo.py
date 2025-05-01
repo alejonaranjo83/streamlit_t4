@@ -4,17 +4,17 @@ import os
 
 
 
-#LEER DATOS
+#LEER DATOS (cambiando el directorio de trabajo... genera error luego para leer directorio de 'pages')
 
-base_dir = os.path.dirname(__file__)
-# base_dir = "." # what is doing this line of code? 
+# base_dir = os.path.dirname(__file__)
+# # base_dir = "." # what is doing this line of code? 
 
-sub_dir = "data/processed" # subdirectory name
+# sub_dir = "data/processed" # subdirectory name
 
-path = os.path.join(base_dir, sub_dir)
+# path = os.path.join(base_dir, sub_dir)
 
-os.listdir(path)
-os.chdir(path)
+# os.listdir(path)
+# os.chdir(path)
 
 
 
@@ -25,9 +25,9 @@ st.set_page_config(
     initial_sidebar_state='expanded'
 )
 
-# df = pd.read_excel("df_total_e3.xlsx")
+df = pd.read_excel("df_total_e3.xlsx")
 
-# st.write(df)
+st.write(df)
 # st.write(path)
 
 
