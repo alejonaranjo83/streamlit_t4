@@ -1,8 +1,8 @@
 pandas
 plotly
 altair
-matplotlib
 streamlit
 numpy 
 openpyxl
+matplotlib
 streamlit_scrollable_textbox

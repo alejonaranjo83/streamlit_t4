@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import os
 
-
+import streamlit_scrollable_textbox as stx
 
 # base_dir = os.path.dirname(__file__)
 # # base_dir = "." # what is doing this line of code? 
