@@ -1,18 +1,21 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
 import os
 
 
 
-base_dir = os.path.dirname(__file__)
-# base_dir = "." # what is doing this line of code? 
+# base_dir = os.path.dirname(__file__)
+# # base_dir = "." # what is doing this line of code? 
 
-sub_dir = "data/processed" # subdirectory name
+# sub_dir = "data/processed" # subdirectory name
 
-path = os.path.join(base_dir, sub_dir)
+# path = os.path.join(base_dir, sub_dir)
 
-os.listdir(path)
-os.chdir(path)
+# os.listdir(path)
+# os.chdir(path)
 
 
 
