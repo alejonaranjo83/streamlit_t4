@@ -4,5 +4,4 @@ altair
 streamlit
 numpy 
 openpyxl
-matplotlib
 streamlit_scrollable_textbox
