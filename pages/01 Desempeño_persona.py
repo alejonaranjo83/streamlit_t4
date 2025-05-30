@@ -10,7 +10,7 @@ import os
 
 # read the data from the corresponding file 
 
-df = pd.read_excel('df_total_e4.xlsx')
+df = pd.read_excel('df_total_e5.xlsx')
 
 # Convert values in the column 'Nivel' to numeric, coercing errors to NaN
 df['Nivel'] = pd.to_numeric(df['Nivel'], errors='coerce') 
@@ -523,7 +523,7 @@ with col[0]: # Contenido de la columna 1
 with col[1]:
     st.write('Selecciona la entrega que quieres ver en detalle')
     
-    entrega = 'E1'
+    entrega = 'E5'
 
     e1, e2, e3, e4, e5, ex, ey, ez = st.columns(8)
     
